@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyHomies5</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="nameString_Plus">+</string>
+    <string name="nameString_Minus">-</string>
+    <string name="nameString_Set">Set</string>
+</resources>
