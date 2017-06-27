@@ -88,7 +88,7 @@ public class AppWidget extends AppWidgetProvider {
         super.onReceive(context, intent);
 
         if(intent.getAction().equals(ACTION_MINUS_BUTTON) ||
-                intent.getAction().equals(ACTION_MINUS_BUTTON)||
+                intent.getAction().equals(ACTION_PLUS_BUTTON)||
                 intent.getAction().equals(ACTION_SET_BUTTON)) {
 
             // Extract ID
@@ -151,7 +151,6 @@ public class AppWidget extends AppWidgetProvider {
                 .setContentTitle("Alarm " + appWidgetId)
                 .setContentText("Timer has worked")
                 .setAutoCancel(true)
-                .setDefaults(Notification.DEFAULT_ALL)
                 .build();
 
         return notification;
