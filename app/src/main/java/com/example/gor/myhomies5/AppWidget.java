@@ -20,6 +20,7 @@ public class AppWidget extends AppWidgetProvider {
     static final String ACTION_SET_BUTTON = "0";
     static final String ACTION_PLUS_BUTTON = "+1";
     static final String ACTION_MINUS_BUTTON = "-1";
+    private static final String ACTION = "Nothing";
 
     public static final String WIDGET_PREF = "widget_pref";
     public static final String WIDGET_COUNT = "widget_count" ;
@@ -142,6 +143,7 @@ public class AppWidget extends AppWidgetProvider {
 
     private Notification getNotification(Context context, int appWidgetId ) {
         Intent intent = new Intent(context, AppWidget.class);
+        intent.setAction(ACTION);
         PendingIntent pIntent = PendingIntent.getBroadcast(context, appWidgetId, intent, 0);
 
         Notification notification  = new Notification.Builder(context)
